@@ -1,0 +1,31 @@
+{% macro leds(ledSTIF, ledVianavigo, ledFinale) %}
+
+<ul>
+    <li>STIF
+        <ul>
+            <li>rouge {{ ledSTIF.rouge }}</li>
+            <li>orange {{ ledSTIF.orange }}</li>
+            <li>vert {{ ledSTIF.vert }}</li>
+        </ul>
+    </li>
+
+    <li>Vianavigo
+        <ul>
+            <li>rouge {{ ledVianavigo.rouge }}</li>
+            <li>orange {{ ledVianavigo.orange }}</li>
+            <li>vert {{ ledVianavigo.vert }}</li>
+        </ul>
+    </li>
+
+    <li>Finale
+        <ul>
+            <li>rouge {{ ledFinale.rouge }}</li>
+            <li>orange {{ ledFinale.orange }}</li>
+            <li>vert {{ ledFinale.vert }}</li>
+        </ul>
+    </li>
+
+
+</ul>
+
+{% endmacro %}

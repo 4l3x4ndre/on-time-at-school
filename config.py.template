@@ -1,2 +1,5 @@
 laps = [0, 15]
 stifKey = 'put your stif key here'
+via_ligne = '800:L'
+via_depart = '8738234'
+via_arrivee = '8738235'

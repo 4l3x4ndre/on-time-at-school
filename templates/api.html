@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Api sncf et vianavigo</title>
+</head>
+<body>
+
+{% import "leds.html" as ledtemplate %}
+
+{{ ledtemplate.leds(ledSTIF, ledVianavigo, ledFinale) }}
+
+<ul>
+    {% for m in messagesSTIF %}
+    <li>{{ m }}</li>
+    {% endfor %}
+
+    {% for m in messagesVianavigo %}
+    <li>{{ m }}</li>
+    {% endfor %}
+</ul>
+{{messageSTIF}}
+
+</body>
+</html>
